@@ -2920,3 +2920,26 @@ html.w-mod-js *[data-ix="flowinfromleft"] {
 .other-projects-list a {
   color: #FFF;
 }
+
+.project-title-wrapper {
+  height: 400px; 
+}
+
+@media (max-width: 991px) {
+  .project-title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .project-title-wrapper {
+    height: 450px;
+  }
+
+  .project-title-wrapper .column-10 {
+    padding: 0;
+  }
+
+  .collection-item {
+    padding-bottom: 40px !important;
+  }  
+}
