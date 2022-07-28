@@ -2942,4 +2942,8 @@ html.w-mod-js *[data-ix="flowinfromleft"] {
   .collection-item {
     padding-bottom: 40px !important;
   }  
+
+  .section-6 {
+    padding-top: 120px;
+  }
 }
