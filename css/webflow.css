@@ -45,6 +45,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333;
+  overflow-x: hidden;
 }
 img {
   max-width: 100%;
@@ -1826,4 +1827,8 @@ p > a {
 
 .w-80 {
   width: 80%;
+}
+
+.heading-8 {
+  max-width: calc(100vw - 100px);
 }
