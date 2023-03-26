@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Fri Mar 09 2018 17:05:10 GMT+0000 (UTC)  -->
+<html data-wf-page="59a4444cf0b9de0001da1f74" data-wf-site="59a4444cf0b9de0001da1f73" lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Coen de Vente &bull; 3D Diffusion Models for Standardized High-Quality OCTs</title>
+  <meta property="og:title" content="Coen de Vente &bull; 3D Diffusion Models for Standardized High-Quality OCTs" />
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/websify.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic", "Raleway:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"]
+        }
+      });
+    </script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/favicon.png" rel="apple-touch-icon">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0837QE6PJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-K0837QE6PJ');
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.1/lazyload.js"></script>
+  <meta name="description" content="Hi! I'm Coen, researcher who is enthusiastic about machine learning, computer vision and health.">
+  <meta property="og:description" content="Hi! I'm Coen, researcher who is enthusiastic about machine learning, computer vision and health.">
+</head>
+<body class="body">
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-ix="changecolorscroll" class="navbar colored w-nav">
+      <div class="container w-container"><a href="index.html" class="brand w-nav-brand">
+        <div>
+          <a href="index.html" class="navlink w-nav-link no-text-transform text-logo">Coen de Vente</a>
+        </div>
+        <nav role="navigation" class="nav-menu colored w-nav-menu">
+          <a href="index.html" class="navlink w-nav-link">Home</a>
+          <a href="projects.html" class="navlink w-nav-link">Projects</a>
+          <a href="publications.html" class="navlink w-nav-link">Publications</a>
+          <a href="cv.html" class="navlink over w-nav-link">CV</a>
+          <a href="about.html" class="navlink over w-nav-link">About</a>
+          <a href="contact.html" class="navlink w-nav-link">Contact</a>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="colored hamburgericon w-icon-nav-menu"></div>
+        </div>
+    </div>
+  </div><div class="section-9">
+  <div style="background-image: linear-gradient(0deg, rgba(11, 77, 23, 0.8), rgba(53, 83, 182, 0.3)), url('images/oct-superres/oct_jungle_thumb.png'); background-size: cover; padding-bottom: 0px; background-position: right;" class="div-block-27 project-title-wrapper">
+    <div style="height: 100%; display: flex; flex-direction: column; justify-content: flex-end;" class="row-5 w-row whitetext" >
+        <h1 style="font-size: 40px; " class="heading-5 zwartehead naastmockup">
+          <div data-ix="flowinslow" class="column-9 w-col w-col-2 whitetext"></div>
+          <div data-ix="flowinslow" class="column-9 w-col w-col-8 whitetext project-title">
+            3D Diffusion Models for Standardized High-Quality OCTs
+
+            <div class="publication-date">
+              <p style="margin: 0; font-weight: 600;"><img class="clock-icon" src="images/clock.png"> 26 March 2023</p>
+            </div>
+          </div>
+          <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>
+        </h1>
+    </div>
+  </div>
+</div>
+
+<div class="section-8">
+  <div class="div-block-29">
+    <div class="div-block-28 bgtarget blurbg"></div>
+  </div>
+  
+  <div class="div-block-27 sameheight0source">
+    <div class="row-5 w-row">
+      <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>
+      <div data-ix="flowinslow" class="column-9 w-col w-col-8">
+        <h3>Purpose</h3>
+
+<p>In optical coherence tomography scans (OCTs) from multicenter studies, there is often large variability in image quality and resolution between scans. This impairs the consistency of biomarker quantification within studies, but also between different datasets. The aim of this study was to validate a super-resolution approach based on artificial intelligence (AI) for improving the resolution of OCTs (by increasing the density of the scan pattern) to consistently enhance data within studies to high-quality standards. </p>
+
+<h3>Methods</h3>
+
+<p>The MACUSTAR cohort, a European multicentre study, was used as a training set with 743 OCTs from 181 patients and validation set with 26 OCTs from 26 patients (n=3 no AMD, n=2 early AMD, n=18 intermediate AMD, n=3 late AMD). All scans were Heidelberg Spectralis OCTs with 241 B-scans. We trained a <a href="https://arxiv.org/abs/2204.03458">3D diffusion model</a> to generate high-resolution OCTs, which was used during evaluation to produce OCTs with 241 B-scans from OCTs with 120 B-scans using <a href="https://arxiv.org/abs/2201.09865">RePaint</a>. The performance was calculated using the mean squared error (MSE) on OCT volume-level between the generated B-scans and the original B-scans.</p>
+
+<p><img src="images/oct-superres/inpainting.png" width=400/ style="margin-left: calc(50% - 200px); max-width: 100%;" alt="Inpainting example, showing every other B-scan is interpolated."></p>
+
+<h3>Results</h3>
+
+<p>The MSE between the generated B-scans from the low-resolution OCTs and the original B-scans from the high-resolution OCTs was 0.006 ± 0.004 (mean ± SD). The figure below shows visual examples of the generated OCTs compared to the original B-scans in the validation set.</p>
+
+<figure>
+  <img src="images/oct-superres/results_fig.jpg" width="100%" style="" alt="Results example figure.">
+  <figcaption>Qualitative examples of generated OCTs compared to original OCTs, along with OCT-level MSEs. In each example, the top row shows the original OCTs and the bottom row shows the generated OCTs. The first column shows the en face projection of the OCT scan, obtained by averaging all A-scans. Black and white lines next to each B-scan in the en face indicate whether that B-scan was generated or present in the low-resolution OCT, respectively. The last three columns show the B-scans of which the positions in the OCT volume are indicated in red in the en face projection.
+</figcaption>
+</figure>
+
+<h3>Conclusions</h3>
+
+<p>We showed the feasibility of the proposed approach to generate super-resolution OCTs, which is one of the required steps to standardize high-quality OCTs within multicenter studies. In extensions of this approach, coherence between the OCT and other modalities, such as en face imaging and other metadata, could be introduced, allowing the AI model to make better informed generative decisions.</p>
+
+<h3>Disclaimers</h3>
+
+<p>The communication reflects the authors' views. Neither IMI nor the European Union, EFPIA, or any associated partners are responsible for any use that may be made of the information contained therein.</p>
+
+<p>The header image of the so-called "OCT jungle" was generated by <a href="https://openai.com/product/dall-e-2">DALL·E 2</a>.</p>
+
+
+        
+            <h3>Publication</h3>
+            <p>Please use this when referring to the post or publication:</p>
+            
+              <div class="publication-card">
+                <p><span class='highlight-me'>C. de Vente</span>, A. Tufail, S. Schmitz-Valckenberg, M. Saßmannshausen, C. Hoyng and C.I. Sánchez on behalf of the MACUSTAR consortium. "OCT Super-Resolution for Data Standardization using AI: A MACUSTAR report", in: <i>Association for Research in Vision and Ophthalmology</i>, 2023.</p><div class="publication-button-group"><a data-ix="goupbox" id="publication-modal-vent23c-button" class="knop footerknop movewithmouse w-button publication-button">Cite</a></div>
+
+              </div>
+            
+        
+
+      </div>
+      <div data-ix="flowinslow" class="column-10 w-clearfix w-col w-col-2"></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-4" style="background-color: #9497B2;">
+  <div class="row-2 w-row">
+    <h3 class="heading-5 zwartehead" style="color: white;">Other projects</h3>
+  </div>
+
+  <div class="row-2 w-row">
+
+    <div class="column-5 w-col w-col-9 w-col-stack">
+      <div class="w-dyn-list">
+        <div class="collection-list colophome w-dyn-items w-row other-projects-list">
+          
+
+<div data-ix="flowinslow" class="collection-item lazyload w-dyn-item w-col w-col-4">
+    <div data-ix="goupbox" class="templatethumb movewithmouse opvoorkant" 
+        style="background-image: linear-gradient(0deg, rgba(211, 93, 39, 0.4), rgba(237, 169, 142, 0.1)), url('images/2a3f6c29d8c6b438f8c0ad0860d9cf43.png'); background-size: cover; background-position: left;">
+        <a class="templatethumblink w-inline-block" href="project-airogs.html">
+            <div class="templatefrontwrap">
+                <div class="templatefront">
+                    <img src="images/magnifying-glass-icon.png" height="20">
+                </div>
+            </div>
+            <img class="thumbimgbg">
+        </a>
+    </div>
+    <h3 class="heading-9"><a href="project-airogs.html">AIROGS Challenge Report: AI models can be used for glaucoma screening, but do they know when they cannot?</a></h3>
+</div>
+
+
+
+<div data-ix="flowinslow" class="collection-item lazyload w-dyn-item w-col w-col-4">
+    <div data-ix="goupbox" class="templatethumb movewithmouse opvoorkant" 
+        style="background-image: linear-gradient(0deg, rgba(52, 152, 219, 0.8), rgba(52, 152, 219, 0.2)), url('images/covid_thumb.png'); background-size: cover; background-position: left;">
+        <a class="templatethumblink w-inline-block" href="project-covid.html">
+            <div class="templatefrontwrap">
+                <div class="templatefront">
+                    <img src="images/magnifying-glass-icon.png" height="20">
+                </div>
+            </div>
+            <img class="thumbimgbg">
+        </a>
+    </div>
+    <h3 class="heading-9"><a href="project-covid.html">Automated COVID-19 Grading in CT Scans</a></h3>
+</div>
+
+
+
+<div data-ix="flowinslow" class="collection-item lazyload w-dyn-item w-col w-col-4">
+    <div data-ix="goupbox" class="templatethumb movewithmouse opvoorkant" 
+        style="background-image: linear-gradient(0deg, rgba(53, 182, 56, 0.4), rgba(53, 83, 182, 0.3)), url('images/bscan_example_thumb.png'); background-size: cover; background-position: center;">
+        <a class="templatethumblink w-inline-block" href="project-transferable-oct.html">
+            <div class="templatefrontwrap">
+                <div class="templatefront">
+                    <img src="images/magnifying-glass-icon.png" height="20">
+                </div>
+            </div>
+            <img class="thumbimgbg">
+        </a>
+    </div>
+    <h3 class="heading-9"><a href="project-transferable-oct.html">Making AI Transferable Across OCT Scanners from Different Vendors</a></h3>
+</div>
+
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="column-6 w-col w-col-3 w-col-stack">
+      <a href="projects.html" data-ix="flowinslow" class="link-block voorhome w-inline-block">
+        <div data-ix="showarrowgoupbox" class="morerect meerophome movewithmouse meernietophome">
+          <h1 class="infronthead moreinfront bekijkmeer">More projects</h1><img src="images/arrow-point-to-right.png" class="arrowright"></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+  <div id="publication-modal-vent23c" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-publication-modal-vent23c">&times;</span>
+      <p>C. de Vente, A. Tufail, S. Schmitz-Valckenberg, M. Saßmannshausen, C. Hoyng and C.I. Sánchez on behalf of the MACUSTAR consortium. "OCT Super-Resolution for Data Standardization using AI: A MACUSTAR report", in: <i>Association for Research in Vision and Ophthalmology</i>, 2023.</p>
+      <pre id="publication-modal-vent23c-pre">@conference{Vent23c,
+  author = {de Vente, Coen and Tufail, A. and Schmitz-Valckenberg, S. and Saßmannshausen, M. and Hoyng, C. and S{\'a}nchez on behalf of the MACUSTAR consortium, Clara I},
+  booktitle ={Association for Research in Vision and Ophthalmology}
+  title = {OCT Super-Resolution for Data Standardization using AI: A MACUSTAR report},
+
+Methods:  The MACUSTAR cohort, a European multicentre study, was used as a training set with 743 OCTs from 181 patients and validation set with 26 OCTs from 26 patients (n=3 no AMD, n=2 early AMD, n=18 intermediate AMD, n=3 late AMD). All scans were Heidelberg Spectralis OCTs with 241 B-scans. We trained a 3D diffusion model to generate high-resolution OCTs, which was used during evaluation to produce OCTs with 241 B-scans from OCTs with 120 B-scans. The performance was calculated using the mean squared error (MSE) on OCT volume-level between the generated B-scans and the original B-scans.
+
+Results: The MSE between the generated B-scans from the low-resolution OCTs and the original B-scans from the high-resolution OCTs was 0.006 ± 0.004 (mean ± SD). Fig. 1 shows visual examples of the generated OCTs compared to the original B-scans in the validation set.
+
+Conclusions:  We showed the feasibility of the proposed approach to generate super-resolution OCTs, which is one of the required steps to standardize high-quality OCTs within multicenter studies. In extensions of this approach, coherence between the OCT and other modalities, such as en face imaging and other metadata, could be introduced, allowing the AI model to make better informed generative decisions.
+},
+  year = {2023},
+}</pre>
+
+        <div class="publication-button-group">
+          <a data-ix="goupbox" onclick="copy_text('publication-modal-vent23c')" 
+          class="knop footerknop movewithmouse w-button publication-button publication-button-black">
+            <img src="images/copy.png" class="copy-icon"> Copy
+          </a>
+      </div>
+    </div>
+  </div>
+
+
+
+<script>
+  function copy_text(id_to_publish) {
+    var id = id_to_publish + "-pre";
+    var r = document.createRange();
+    r.selectNode(document.getElementById(id));
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(r);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+  }
+</script>
+<div class="div-block-17">
+  <div data-ix="flowinslow" class="div-block-34">
+    <h1 class="heading-7">Want to get in contact?</h1><a data-ix="goupbox" href="contact.html" class="knop footerknop movewithmouse w-button">Drop me a line</a></div>
+</div>
+
+
+<div class="section-5">
+    <div class="row-3 w-row">
+      <div class="column colrightarr w-col w-col-4">
+        <div class="div-block-9">
+          <div class="text-block-8">sitemap</div>
+        </div>
+        <div class="div-block-9"><a href="index.html" class="link">home</a></div>
+        <div class="div-block-9"><a href="projects.html" class="link">projects</a></div>
+        <div class="div-block-9"><a href="publications.html" class="link">publications</a></div>
+        <div class="div-block-9"><a href="cv.html" class="link">cv</a></div>
+        <div class="div-block-9"><a href="about.html" class="link">about</a></div>
+        <div class="div-block-9"><a href="contact.html" class="link">contact</a></div>
+      </div>
+      <div class="colrightarr w-col w-col-4">
+        <div class="div-block-9">
+          <div class="text-block-8">contact</div>
+        </div>
+        <div class="div-block-9"><a href="mailto:hello@coendevente.com" class="link">hello@coendevente.com</a></div>
+        <div class="div-block-9"><a href="contact.html" class="link">contact form</a></div>
+        <div class="div-block-9"><a href="https://calendly.com/coendevente" class="link">schedule a meeting with me</a></div>
+      </div>
+      <div class="colrightarr w-col w-col-4 norightbar">
+        <div class="div-block-9">
+          <div class="text-block-8">links</div>
+        </div>
+        <!-- <div class="div-block-9 langetekst"> -->
+        <div class="div-block-9">
+          <a target="_blank" href="https://scholar.google.com/citations?user=AqL8A60AAAAJ" class="link">
+            <img class="link-icon" src="images/links/scholar.svg" /> Google Scholar
+          </a>
+        </div>
+        <div class="div-block-9">
+          <a target="_blank" href="https://www.linkedin.com/in/coendevente/" class="link">
+            <img class="link-icon" src="images/links/linkedin.png" /> LinkedIn
+          </a>
+        </div>
+        <div class="div-block-9">
+          <a target="_blank" href="https://qurai.amsterdam/researcher/coen_de_vente/" class="link">
+            <img class="link-icon" src="images/links/qurai.png" /> QurAI
+          </a>
+        </div>
+        <div class="div-block-9">
+          <a target="_blank" href="https://www.diagnijmegen.nl/people/coen-de-vente/" class="link">
+            <img class="link-icon" src="images/links/radboudumc.png" /> DIAG Nijmegen
+          </a>
+        </div>
+        <div class="div-block-9">
+          <a target="_blank" href="https://github.com/coendevente" class="link">
+            <img class="link-icon" src="images/links/github.svg" /> GitHub
+          </a>
+        </div>
+        <!-- <div class="div-block-9">
+          <a target="_blank" href="https://github.com/coendevente/build-coendevente.com" class="link">
+            <img class="link-icon" src="images/links/github.svg" /> coendevente.com
+          </a>
+        </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <style>
+      .w-webflow-badge {
+        display: none !important;
+      }
+      .w-nav,
+      .w--nav-menu-open,
+      .w-nav-link {
+        transition: all .5s;
+      }
+      .w-nav.colored,
+      .w--nav-menu-open.colored {
+        background: #FFF;
+        box-shadow: 0 -10px 30px #333;
+      }
+      .w-nav-link.colored {
+        color: #333 !important;
+      }
+      .w-icon-nav-menu.colored {
+        color: #333;
+      }
+      .thumbimgbg {
+        position: relative;
+        top: 0;
+        z-index: 0;
+      }
+      .templatefront {
+        transition: opacity .3s;
+      }
+    </style>
+  <script>
+      lazyload();
+      function refresh() {
+        thresh = 0;
+        fromTop = $(window).scrollTop();
+        navHeight = $(".w-nav").height() + $(".w-nav-menu").height();
+        wittebalk = $(".wittebalk").html() === "1";
+        alwaysDarkText = $(".naastmockup").css("color") === "rgb(51, 51, 51)";
+        if (thresh < fromTop || $(window).width() <= 991 || wittebalk || alwaysDarkText) {
+          $(".w-nav").addClass("colored");
+          $(".w-nav-link").addClass("colored");
+          $(".blacklogo").show();
+          $(".whitelogo").hide();
+          $(".w-icon-nav-menu").addClass("colored");
+          $(".w--nav-menu-open").addClass("colored");
+        } else {
+          $(".w-nav").removeClass("colored");
+          $(".w-nav-link").removeClass("colored");
+          $(".blacklogo").hide();
+          $(".whitelogo").show();
+          $(".w-icon-nav-menu").removeClass("colored");
+          $(".w--nav-menu-open").removeClass("colored");
+        }
+      }
+      $(document).click(function() {
+        refresh();
+      });
+      $(document).ready(function() {
+        refresh();
+      });
+      $(window).scroll(function() {
+        refresh();
+      });
+      $(window).resize(function() {
+        refresh();
+      });
+      $(".movewithmouse").mousemove(function(e) {
+        cursorX = e.clientX;
+        cursorY = e.clientY;
+        divW = $(this).outerWidth();
+        divH = $(this).outerHeight();
+        maxXdeg = divW / 50;
+        maxYdeg = maxXdeg; //10;
+        maxZdeg = -(divW / 400); //0;//3;//2;
+        maxXpx = divW / 50; //10;//30;
+        maxYpx = divW / 50; //10;//30;
+        divCenterX = $(this).offset().left - $(window).scrollLeft() + (divW / 2);
+        divCenterY = $(this).offset().top - $(window).scrollTop() + (divH / 2);
+        xDist = cursorX - divCenterX;
+        yDist = cursorY - divCenterY;
+        xDeg = -maxXdeg * (xDist / (divW / 2));
+        yDeg = maxYdeg * (yDist / (divH / 2));
+        zDeg = maxZdeg * (xDist * yDist / (divW * divH / 4));
+        xPx = maxXpx * (xDist / (divW / 2));
+        yPx = maxYpx * (yDist / (divH / 2));
+        cssText = "scale(1.04)";
+        cssText += " rotateY(" + xDeg + "deg) rotateX(" + yDeg + "deg) rotateZ(" + zDeg + "deg)";
+        cssText += " translateX(" + xPx + "px) translateY(" + yPx + "px)";
+        $(this).css("transform", cssText);
+      });
+      $(".templatethumb").hover(function() {
+        thumbW = $(this).width();
+        thumbH = $(this).height();
+        img = $(this).find(".thumbimgbg");
+        imgH = img.height();
+        v = 45; // px per sec
+        t = imgH / v;
+        $(".thumbimgbg").css("transition", "top " + t + "s");
+        console.log(t);
+        img.css("top", -imgH + thumbH);
+        $(this).find(".templatefront").width(thumbW);
+        $(this).find(".templatefront").height(thumbH);
+        $(this).find(".templatefront").css("opacity", 1);
+      }, function() {
+        img.css("top", 0);
+        $(this).find(".templatefront").css("opacity", 0);
+      });
+    </script>
+<!--End of Tawk.to Script -->
+  <style>
+      .hideword {
+        /* display: none; */
+        opacity: 0;
+      }
+      .switchwordswrap {
+        text-align: left;
+      }
+      .switchwords,
+      .holdplace {
+        display: block;
+        float: left;
+        height: 70px;
+      }
+      @media(max-width: 767px) {
+        .switchwords,
+        .holdplace {
+          height: 55px;
+        }
+      }
+      @media(max-width: 479px) {
+        .switchwords,
+        .holdplace {
+          height: 45px;
+        }
+      }
+      .wordwrapper {
+        position: absolute;
+        height: 0;
+        width: 0;
+      }
+      .nofloatleft {
+        /* float: none; */
+      }
+      .floatleftwrap {
+        /* overflow: hidden; */
+      }
+    </style>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/plax.js"></script>
+  <script>
+    $.plax.enable()
+    $('.medical-image').plaxify()
+    $('.ground-bg').plaxify()
+    $('.plax').plaxify()
+  </script>
+
+  <script>
+    Array.from(document.getElementsByClassName("modal")).forEach(
+      function(modal) {
+        // Get the button that opens the modal
+        var btn = document.getElementById(modal.id + "-button");
+        console.log(btn);
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementById("close-" + modal.id);
+        
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+      }
+    );
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      Array.from(document.getElementsByClassName("modal")).forEach(
+        function(modal) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+            console.log(modal)
+          }
+        }
+      )
+    };
+  </script>
+</body>
+</html>
