@@ -1421,7 +1421,7 @@
   width: 100vw;
 }
 
-p, .paragraph-4, figcaption {
+p, .paragraph-4, figcaption, ol > li {
   padding-right: 0px;
   padding-left: 0px;
   color: #777;
@@ -1430,6 +1430,11 @@ p, .paragraph-4, figcaption {
   text-align: justify;
   font-size: 16px;
   line-height: 28px;
+}
+
+ol > li {
+  font-size: 13px;
+  /* line-height: 20px; */
 }
 
 figcaption {
@@ -2801,15 +2806,50 @@ html.w-mod-js *[data-ix="flowinfromleft"] {
   margin-top: -2px;
 }
 
+.download-icon {
+  height: 20px;
+  margin-right: 3px;
+  margin-top: -2px;
+}
+
 .copy-icon {
   height: 20px;
   margin-right: 3px;
   margin-top: -3px;
 }
 
-.publication-date {
+.below-title-wrapper {
+  display: flex;
+  align-items: flex-start;
   margin-top: 5px;
-  margin-bottom: -20px;
+  margin-bottom: -30px;
+}
+
+.below-title-wrapper p {
+  font-weight: 600;
+}
+
+.publication-date {
+  margin-right: 15px;
+}
+
+.download-pdf-button {
+  margin-right: 15px;
+}
+
+.download-pdf-button a {
+  text-decoration: none;
+}
+
+.download-pdf-button .download-icon {
+  transition: margin-top .2s;
+}
+
+.download-pdf-button:hover .download-icon {
+  /* padding-top: 4px;
+  margin-left: 2px;
+  margin-right: 5px; */
+  margin-top: 6px;
 }
 
 .publication-card {
