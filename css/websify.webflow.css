@@ -1242,6 +1242,7 @@
   font-family: Raleway, sans-serif;
   color: #333;
   font-size: 21px;
+  margin-top: 25px;
 }
 
 .heading-9 a {
@@ -2003,6 +2004,14 @@ figcaption {
   font-size: 50px;
   line-height: 50px;
   font-weight: 700;
+}
+
+.heading-17 {
+  font-family: Raleway, sans-serif;
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  opacity: .8;
 }
 
 .text-block-15 {
@@ -2963,7 +2972,7 @@ html.w-mod-js *[data-ix="flowinfromleft"] {
   font-weight: 500;
 }
 
-.other-projects-list a {
+.other-projects-list a, .other-projects-list .heading-17 {
   color: #FFF;
 }
 
