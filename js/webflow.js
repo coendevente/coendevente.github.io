@@ -3049,3 +3049,14 @@ Webflow.require('ix').init([
   {"slug":"flowinfromright","name":"flowinfromright","value":{"style":{"opacity":0,"x":"200px","y":"0px","z":"0px"},"triggers":[{"type":"scroll","stepsA":[{"display":"block","opacity":1,"transition":"transform 400ms ease 0, opacity 400ms ease 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[]}]}},
   {"slug":"flowinfromleft","name":"flowinfromleft","value":{"style":{"opacity":0,"x":"-200px","y":"0px","z":"0px"},"triggers":[{"type":"scroll","stepsA":[{"opacity":1,"transition":"transform 400ms ease 0, opacity 400ms ease 0","x":"0px","y":"0px","z":"0px"}],"stepsB":[]}]}}
 ]);
+
+
+function copy_text(id_to_publish) {
+  var id = id_to_publish + "-pre";
+  var r = document.createRange();
+  r.selectNode(document.getElementById(id));
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(r);
+  document.execCommand('copy');
+  window.getSelection().removeAllRanges();
+}
