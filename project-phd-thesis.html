@@ -8,9 +8,9 @@
   <meta property="og:title" content="Coen de Vente &bull; Towards Robust Deep Learning for Medical Imaging" />
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
-  <link href="css/normalize.css?1793875393" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css?1793875393" rel="stylesheet" type="text/css">
-  <link href="css/websify.webflow.css?1793875393" rel="stylesheet" type="text/css">
+  <link href="css/normalize.css?1793895528" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css?1793895528" rel="stylesheet" type="text/css">
+  <link href="css/websify.webflow.css?1793895528" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">
       WebFont.load({
@@ -97,7 +97,7 @@
 
 <p>In ophthalmology, we organised the <a href="project-airogs.html">AIROGS challenge</a> to evaluate both glaucoma screening and the ability to identify ungradable retinal photographs. The challenge used around 113,000 images from 60,000 patients across 500 screening sites. It put a practical question at the centre of evaluation: can an algorithm recognise when an image does not support a reliable decision? This makes the ability to flag unsuitable inputs an explicit part of assessing a screening system.</p>
 
-<p>Another part of the thesis focused on optical coherence tomography (OCT) for age-related macular degeneration. I developed Uncertainty-Based Instance eXclusion (UBIX), which uses uncertainty estimates to reduce the influence of corrupted slices on an overall prediction, without retraining on those artifacts. We also investigated domain adaptation to improve the consistency of retinal biomarker segmentation across scanners. Together, these approaches address differences in image appearance that can otherwise undermine a model's performance outside its training setting.</p>
+<p>Another part of the thesis focused on optical coherence tomography (OCT) for age-related macular degeneration. I developed <a href="project-ubix.html">Uncertainty-Based Instance eXclusion (UBIX)</a>, which uses uncertainty estimates to reduce the influence of corrupted slices on an overall prediction, without retraining on those artifacts. We also investigated <a href="project-irora-crora.html">domain adaptation to improve the consistency of retinal biomarker segmentation across scanners</a>. Together, these approaches address differences in image appearance that can otherwise undermine a model's performance outside its training setting.</p>
 
 <p>Finally, we explored <a href="project-oct-superres.html">3D diffusion models for OCT super-resolution</a>, using accompanying en face images to guide the generation of more densely sampled OCT volumes. This demonstrated a possible step towards more consistent imaging data, rather than establishing a finished clinical solution. Across these projects, the aim was to make robustness part of how medical imaging AI is developed and evaluated, so that its strengths and limitations remain visible when moving beyond the research setting.</p>
 
@@ -165,8 +165,8 @@
 
 <div data-ix="flowinslow" class="collection-item lazyload w-dyn-item w-col w-col-4">
     <div data-ix="goupbox" class="templatethumb movewithmouse opvoorkant" 
-        style="background-image: linear-gradient(0deg, rgba(77, 131, 143, 0.8), rgba(77, 131, 143, 0.2)), url('images/visualizing_ai_thumb.png'); background-size: cover; background-position: top;">
-        <a class="templatethumblink w-inline-block" href="project-uva-interview.html">
+        style="background-image: url(images/irora-crora/thumbnail.svg); background-size: cover; background-position: center;">
+        <a class="templatethumblink w-inline-block" href="project-irora-crora.html">
             <div class="templatefrontwrap">
                 <div class="templatefront">
                     <img src="images/magnifying-glass-icon.png" height="20">
@@ -175,8 +175,8 @@
             <img class="thumbimgbg">
         </a>
     </div>
-    <h3 class="heading-9"><a href="project-uva-interview.html">An interview on robust AI for medical imaging with the University of Amsterdam</a></h3>
-    <h4 class="heading-17">16 June 2023</h4>
+    <h3 class="heading-9"><a href="project-irora-crora.html">Detecting iRORA and cRORA Across OCT Scanners</a></h3>
+    <h4 class="heading-17">5 September 2024</h4>
 </div>
 
 
