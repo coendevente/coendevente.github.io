@@ -1713,7 +1713,7 @@ body {
   background: #333;
   height: var(--parallax-banner-height);
   width: 100%;
-  background-image: url("../images/parallax/bg.png");
+  background-image: url('../images/optimized/bf40751778d0f4a2a9a2.webp');
   background-size: cover;
 }
 
@@ -1845,7 +1845,7 @@ p > a {
 }
 
 .about-me-main-image {
-  background-image: radial-gradient(circle farthest-corner at 0% 0%, rgba(11, 12, 41, 0.7), rgba(91, 91, 218, 0.5)), url('../images/me_art.png') ;
+  background-image: radial-gradient(circle farthest-corner at 0% 0%, rgba(11, 12, 41, 0.7), rgba(91, 91, 218, 0.5)), url('../images/optimized/a00a4ca1b7379386959a.webp') ;
   background-size: cover;
   height: 650px;
   background-position: center;

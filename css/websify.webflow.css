@@ -1129,8 +1129,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-linear-gradient(236deg, rgba(29, 29, 44, .53), rgba(30, 30, 44, .92)), url('../images/pexels-photo-373966.jpeg');
-  background-image: linear-gradient(214deg, rgba(29, 29, 44, .53), rgba(30, 30, 44, .92)), url('../images/pexels-photo-373966.jpeg');
+  background-image: -webkit-linear-gradient(236deg, rgba(29, 29, 44, .53), rgba(30, 30, 44, .92)), url('../images/optimized/71692f3d45006cbef874.webp');
+  background-image: linear-gradient(214deg, rgba(29, 29, 44, .53), rgba(30, 30, 44, .92)), url('../images/optimized/71692f3d45006cbef874.webp');
   background-position: 0px 0px, 50% 63%;
   background-size: auto, cover;
 }
