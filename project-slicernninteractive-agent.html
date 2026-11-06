@@ -8,9 +8,9 @@
   <meta property="og:title" content="Coen de Vente &bull; Segmenting 3D Medical Images with Text: nnInteractive Agent in Slicer" />
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
-  <link href="css/normalize.css?1793961709" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css?1793961709" rel="stylesheet" type="text/css">
-  <link href="css/websify.webflow.css?1793961709" rel="stylesheet" type="text/css">
+  <link href="css/normalize.css?1793963104" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css?1793963104" rel="stylesheet" type="text/css">
+  <link href="css/websify.webflow.css?1793963104" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">
       WebFont.load({
@@ -124,13 +124,11 @@
 
 <p>The agent takes over the sequence of interactions that a human would otherwise perform manually. For example, a request such as “segment every rib individually” gives it a task to work through using the image and the segmentation tools. Claude Code and Codex are supported, alongside configurable model servers. The underlying segmentation still comes from nnInteractive; the agent decides how to use it to carry out the request.</p>
 
-<h3>Watch segmentation from a text request</h3>
-
-<p>This is the second demonstration from the repository, showing the agent integration in Slicer:</p>
+<h3>Demo video</h3>
 
 <p><video controls preload="metadata" playsinline style="width:100%;height:auto;" aria-label="SlicerNNInteractive demonstration"><source src="https://github.com/user-attachments/assets/8a6a7fc7-df8d-47d9-b13d-1d6a49df16a7" type="video/mp4">Your browser does not support embedded video. <a href="https://github.com/user-attachments/assets/8a6a7fc7-df8d-47d9-b13d-1d6a49df16a7">Watch the demonstration on GitHub</a>.</video></p>
 
-<p>The conversation and the images inspected by the agent appear in the module, while completed objects are added to a Slicer segmentation. You can review the result in the familiar slice and 3D views, ask for changes, or send an existing segmentation to the agent for further work. This creates a workflow that combines text instructions with visual inspection and manual editing.</p>
+<p>The conversation and the images inspected by the agent appear in the module, while completed objects are added to a Slicer segmentation. You can review the result in the familiar slice and 3D views, ask for changes, or send an existing segmentation to the agent for further work.</p>
 
 <p>The agent can use image renderings and associated information when communicating with its configured model provider. Choose a provider or locally hosted model appropriate for your data. Installation and configuration details are in the <a href="https://github.com/coendevente/SlicerNNInteractive#nninteractive-agent-segment-from-a-text-request">SlicerNNInteractive README</a>.</p>
 
