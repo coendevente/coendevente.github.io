@@ -8,9 +8,9 @@
   <meta property="og:title" content="Coen de Vente &bull; AIROGS Challenge Report: AI models can be used for glaucoma screening, but do they know when they cannot?" />
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
-  <link href="css/normalize.css?1793960981" rel="stylesheet" type="text/css">
-  <link href="css/webflow.css?1793960981" rel="stylesheet" type="text/css">
-  <link href="css/websify.webflow.css?1793960981" rel="stylesheet" type="text/css">
+  <link href="css/normalize.css?1793961709" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css?1793961709" rel="stylesheet" type="text/css">
+  <link href="css/websify.webflow.css?1793961709" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
   <script type="text/javascript">
       WebFont.load({
@@ -579,10 +579,12 @@ In conclusion, we presented a challenge based on real-world data for glaucoma sc
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/plax.js"></script>
   <script>
-    $.plax.enable()
-    $('.medical-image').plaxify()
-    $('.ground-bg').plaxify()
-    $('.plax').plaxify()
+    if ($('.medical-image, .ground-bg, .plax').length) {
+      $('.medical-image').plaxify();
+      $('.ground-bg').plaxify();
+      $('.plax').plaxify();
+      $.plax.enable();
+    }
   </script>
 
   <script>
